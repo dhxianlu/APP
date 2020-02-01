@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>廣東會</title>
+    <link rel="stylesheet" href="./css/ky.css">
+    <script src="./js/jquery-2.0.0.min.js"></script>
+</head>
+<body>
+    <div class="box">
+        <div class="title">
+            <div class="left">
+                <div class="logo" id="download"><img src="./img/2xlogo.png" alt></div>
+                <div class="text">
+                    <span class="sp1">廣東會官方APP<br></span>
+                    <span class="sp2">最快，最稳的投注平台</span>
+                </div>
+            </div>
+            <a href="" class="hre1"><div class="but">APP下载</div></a>
+        </div>
+        <div class="active_logo">
+            <img src="./img/active_logo.png" alt>
+        </div>
+        <!--<div class="active_tit">精彩活动</div>
+        <div class="active_body">
+            <a href="./active/index.html?type=qp">
+            <div class="active_box">
+                <div class="ac_img"><img src="./img/qp.png" alt></div>
+                <div class="ac_text">
+                    <span class="sp1">棋牌金管家<br></span>
+                    <span class="sp2">打造黄金账号</span>
+                </div>
+            </div>
+            </a>
+            <a href="./active/index.html?type=dz">
+            <div class="active_box">
+                <div class="ac_img"><img src="./img/dz.png" alt></div>
+                <div class="ac_text">
+                    <span class="sp1">电子金管家<br></span>
+                    <span class="sp2">打造黄金账号</span>
+                </div>
+            </div>
+            </a>
+            <a href="./active/index.html?type=sx">
+            <div class="active_box">
+                <div class="ac_img"><img src="./img/sx.png" alt></div>
+                <div class="ac_text">
+                    <span class="sp1">视讯金管家<br></span>
+                    <span class="sp2">打造黄金账号</span>
+                </div>
+            </div>
+            </a>
+            <a href="./active/index.html?type=by">
+                <div class="active_box">
+                    <div class="ac_img"><img src="./img/by.png" alt></div>
+                    <div class="ac_text">
+                        <span class="sp1">捕鱼游戏<br></span>
+                        <span class="sp2">每日暴击加赠8888</span>
+                    </div>
+                </div>
+            </a>
+            <div style="clear:both"></div>
+        </div>-->
+        <div class="notice">
+            当“广东会”APP无法打开时，您可以重新下载最新应用（请务必删除旧应用），无需联系客服。方便、快捷、安全，一步到位，为您提供最全面最贴心的服务。
+            <img src="./img/tit.png" alt="">
+        </div>
+        <div class="group">
+            <div class="butt"><a href="" class="hre1"><img src="./img/but1.png" alt=""></a></div>
+            <div class="butt"><a href="https://330066.vip/" target="_blank"><img src="./img/but21.png" alt=""></a></div>
+        </div>
+        <div class="teach" style="padding-top: 35px;position: relative;">
+            <a href="#download" style="position: absolute;
+    bottom: 6rem;
+    left: 3rem;
+    display: block;
+    width: 28rem;
+    height: 5rem;"></a>
+            <div class="but">IOS安装流程</div>
+            <img src="./img/help.png">
+            <!--<img src="./img/a_06.jpg">
+            <img src="./img/a_07.jpg">
+            <img src="./img/a_08.jpg">
+            <img src="./img/a_09.jpg">
+            <img src="./img/a_10.jpg">
+            <img src="./img/a_11.jpg">
+            <img src="./img/a_12.jpg">
+            <img src="./img/a_13.jpg">
+            <img src="./img/a_14.jpg">-->
+        </div>
+    </div>
+</body>
+<script>
+    var oHtml = document.getElementsByTagName('html')[0]
+    var width = oHtml.clientWidth;
+    oHtml.style.fontSize = 10 * (width / 375) + "px";
+    var android_url = "http://3000016.com/download/gdh/gdh.apk";
+    var ios_url = 'https://eozpwmc.com/install?packetName=gdh&step=0';
+    var ua = window.navigator.userAgent.toLowerCase();
+    var url = '';
+    if (/iphone/.test(ua) || /ipad/.test(ua)) {
+        $('.hre1').attr('href', ios_url);
+    } else if (/android/.test(ua)) {
+        url = android_url;
+        $('.hre1').attr('href', android_url);
+    } else {
+        console.log("您的移动设备暂不支持此APP，请谅解");
+    }
+</script>
+</html>
